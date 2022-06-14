@@ -3,7 +3,7 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-gray-light: hsl(217, 12%, 63%);
   --clr-gray-medium: hsl(216, 12%, 54%);
-  --clr-gray-dark: #34383e;
+  --clr-gray-dark: #33373d;
   --clr-blue: #212731;
   --clr-blue-dark: #141519;
 
@@ -11,18 +11,11 @@
   --mq-desktop: 1440px;
 }
 
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
   padding: 0;
@@ -42,7 +35,7 @@ body {
   font-family: 'Overpass', sans-serif;
   font-size: 15px;
   font-weight: 300;
-  height: 100vh;
+  height: 97vh;
   background-color: var(--clr-blue-dark);
   color: var(--clr-gray-light);
 }
@@ -51,7 +44,7 @@ body {
   width: 100%;
   max-width: 400px;
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -79,12 +72,12 @@ body {
   margin-bottom: 2em;
 }
 
-.card .title {
+.title {
   color: var(--clr-white);
   font-weight: normal;
 }
 
-.card .info {
+.info {
   margin-top: 1em;
   margin-bottom: 2em;
   line-height: 1.5;
@@ -172,7 +165,8 @@ body {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 375px) {
+/* MEDIA QUERIES */
+@media screen and (max-width: var(--mq-mobile)) {
   .card .title {
     font-size: 1.75rem;
   }
